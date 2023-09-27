@@ -1,0 +1,753 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*Navigation*/
+.navbar{
+    background-color: #E3DBAF;
+    
+   
+}
+.collapse{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-container{
+    display: flex;
+    width:80%;
+    justify-content:center;
+    align-content:flex-start ;
+    margin-right: 20px;
+    padding-left: 0px !important;
+    gap:30px;
+    
+}
+
+.icons-container{
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 15px;
+    width:100px;
+    align-items: flex-start !important;
+}
+
+.nav-item{
+    list-style:none;
+}
+
+.nav-link{
+    color: #5B0C0A !important;
+}
+li#home {
+    
+    color: #5B0C0A !important;
+    font-weight: 600 !important;
+   display: inline-block !important;
+   position: relative !important;
+}
+li#home:hover{
+    color:#5B0C0A !important;
+}
+
+.change{
+    color: #5B0C0A !important;
+}
+
+li#home:hover::before, li#home .change::before{
+    visibility: visible !important;
+  -webkit-transform: scaleX(1) !important;
+  transform: scaleX(1) !important;
+}
+li#home::before, .change::before{
+    content: "" !important;
+    position: absolute !important;
+    width: 100% !important;
+    height: 3px !important;
+    bottom: -8px !important;
+    left: 0 !important;
+    background-color: #EC7F07 !important;
+    visibility: hidden !important;
+    -webkit-transform: scaleX(0) !important;
+    transform: scaleX(0) !important;
+    -webkit-transition: all 0.15s ease-in-out 0s !important;
+    transition: all 0.15s ease-in-out 0s !important;
+
+}
+
+.dropdown-menu{
+    /* color: #575757 !important;
+    text-align: center !important;
+    width: 250px !important;*/
+    border-radius: 0px !important;
+    padding:0px !important;
+    
+}
+
+.dropdown-divider{
+    margin:0px !important;
+}
+
+.dropdown-item:hover{
+    background-color: #5B0C0A !important;
+    color: #EC7F07 !important;  
+}
+
+.dropdown-item{
+    height: 45px !important;
+    text-align: center !important;
+    padding:0px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+li.divisions{
+    width: 250px !important;
+}
+
+.dropdown-menu li{
+    color: #EC7F07 !important;
+    text-align: center !important;
+    width: 250px;
+    border-radius: 0px !important;
+    border-bottom: #aaaaaa solid 1px;
+}
+
+.dropdown-menu li:hover{
+    background-color: #5B0C0A !important;
+    color: #EC7F07 !important; 
+}
+
+.fa-brands, .fa-solid{
+    font-size: larger;
+    color: black !important;
+}
+
+/*Contact Image*/
+.contact-us-image{
+    width: 100%;
+    height:500px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/Webp.net-compress-image-2.jpg);
+    margin-bottom: 0px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.contact-logo{
+    width: 300px;
+    height: 45px;
+}
+
+.contact-img-h{
+    color: #ffffff;
+   
+}
+
+.img-h3{
+    color: #EC7F07;
+   font-size: small;
+   font-style: italic;
+}
+
+.contact-img-h-container{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+/*Branches*/
+
+
+.all-branch{
+    padding-top: 30px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.branch-main{
+  
+}   
+.branch-h-container{
+    display: flex;
+    justify-content: center;
+   
+    margin-bottom: 30px;
+}
+
+.head-office-location{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.branch-h{
+    color: #000000;
+}
+
+.tell-fax-b, .cell-b{
+    display: flex;
+    gap:10px;
+    margin-left: -70px;
+    
+}
+
+.mail-b{
+    display: flex;
+    gap:10px;
+   align-self: flex-start;
+   margin-left: 5.5%;
+}
+
+
+.simon-number-b, .thusho-number-b{
+    margin-left: 25px;
+}
+
+.head-h{
+    margin-bottom: 20px;
+    color: #5B0C0A;
+}
+
+ i.fa-solid.fa-house.c{
+    color: #5B0C0A !important;
+}
+
+.house h6{
+    color: #000000;
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
+
+.head-branch-container{
+    width:100%;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
+    align-content: space-around;
+    
+}
+
+.footer-contact-h-b{
+    color: #5B0C0A;
+}
+
+.house-adress, .galashwe-adress, .Hartswater-adress{
+    color: #000000;
+}
+.house{
+    display: flex;
+    align-content: center;
+    gap: 5px;
+}
+.head-location{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.locations-container{
+   
+    padding-right: 7%;
+}
+
+.head-map{
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+   
+}
+
+
+.head-map iframe {
+    height: 300px;
+    border-radius: 10px;
+    width: 400px;
+    border: yellow solid 1px !important;
+    
+}
+
+
+
+.footer-contact-b{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+
+}
+
+.fa-envelope.b, .fa-mobile-screen.b, .fa-fax.b{
+    color:#5B0C0A !important;
+}
+
+
+/*Contact form*/
+
+.contact-today-heading{
+    color: #000000;
+}
+.contact-us-heading-container{
+    
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.inputs-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-form{
+    width: 100%;
+}
+
+.inputs-container{
+    margin-bottom: 30px;
+}
+.inputs-container input{
+    width: 300px;
+    height: 50px;
+    background-color: #E3DBAF;
+    color: #5B0C0A;
+    border: none;
+    padding-left: 10px;
+
+}
+
+input::placeholder{
+    color: #5B0C0A;
+}
+
+input:focus{
+    border: #5B0C0A solid 2px;
+    outline: #5B0C0A;
+    border-radius: 5px;
+}
+
+.message{
+    width:100%;
+}
+
+.message textarea{
+    width: 71.5%;
+    height: 200px;
+    background-color: #E3DBAF;
+    border: none;
+    
+}
+textarea::placeholder{
+    color: #5B0C0A;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+textarea:focus{
+    border: #5B0C0A solid 2px;
+    outline: #5B0C0A;
+    border-radius: 10px;
+   
+}
+.message{
+    display: flex;
+    justify-content: center;
+
+}
+.submit-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.submit-btn{
+    width:200px;
+    height: 50px;
+    background-color: #5B0C0A;
+    color: #E3DBAF;
+    border: none;
+    font-weight: bold;
+}
+
+/*map*/
+.find-us-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+}
+.map iframe{
+
+    width: 100%;
+}
+
+/*footer section*/
+
+
+.page-footer{
+    background-color: #E3DBAF;
+    display: flex;
+    padding:20px;
+    gap:20px;
+}
+
+.home-footer{
+    width: 30%;
+}
+.footer-logo{
+    width:250px;
+    margin-bottom: 30px;
+}
+
+.footer-h-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 12px;
+   
+}
+
+.footer-contact-heading{
+    color: #5B0C0A;
+}
+
+.footer-contact-h{
+    color: #5B0C0A;
+    margin-bottom:20px;
+}
+
+.head-office-p, .galashwe-p, .Hartswater-p{
+    color: #5B0C0A;
+    font-size: larger;
+    font-weight: 600;
+    margin-bottom: 0px !important;
+}
+.head-office-text, .galashwe-text, .Hartswater-text{
+    display: flex;
+    gap:10px;
+    
+}
+
+.footer-home{
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    padding-left: 7%;
+}
+
+.tell-fax, .cell, .thusho, .simon, .mail{
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-contact{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.tell-fax p{
+    margin-left: 20px;
+}
+
+.cell p{
+    margin-left: 20px;
+    margin-bottom: 0px !important;
+}
+
+.thusho-text{
+    font-weight:  bold;
+}
+
+.simon-text{
+   font-weight: bold;
+}
+
+.simon-number{
+    margin-left:35px;
+}
+
+.thusho-number{
+    margin-left:35px;
+    margin-bottom: 0px !important;
+}
+
+.mail p{
+    margin-left: 15px;
+}
+
+/*copy rights*/
+.Copyrights-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5B0C0A;
+    height: 25px;
+}
+
+.Copyrights-container p{
+    margin-bottom: 0px !important;
+    font-size: small;
+    color: #E3DBAF;
+    font-weight: 600;
+}
+
+.kwenzo-link{
+    text-decoration: none;
+    color: #E3DBAF;
+}
+
+.kwenzo-link:hover{
+    color: #E3DBAF;
+}
+
+@media  (max-width:768px){
+    /*Navigation*/
+    .nav-container{
+        flex-direction: column;
+    }
+
+    .collapse{
+        display: block;
+        padding-left: 0px;
+    }
+
+    li#home::before, .change::before{
+        width:14% !important;
+    }
+
+    /*contact-us image*/
+    .contact-logo{
+        width:200px;
+        height: 20px;
+    }
+
+    .contact-img-h-container{
+        height: 150px;
+    }
+
+    .contact-img-h{
+        font-size: calc(1.375rem + 1.5vw);
+    }
+
+    .img-h3{
+        font-size: smaller;
+        text-align: center;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .contact-us-image{
+        background-position: 70%;
+    }
+
+    /*branch*/
+    .head-branch-container{
+        flex-direction: column;
+    }
+
+    .head-location{
+        width: 100%;
+    }
+
+    .head-map{
+        width: 100%;
+        height: 330px;
+    }
+
+    .head-map iframe{
+        margin-top: 20px;
+    }
+
+    .head-h{
+        margin-bottom: 10px;
+        font-size: small;
+    }
+
+    .head-office-location{
+        justify-content: flex-start;
+
+    }
+
+    .locations-container{
+        width: auto;
+        margin-bottom: 10px;
+       
+    }
+
+    .cell-numbers{
+        margin-left: 4px;
+    }
+
+    i.fa-solid.fa-house.c {
+        color: #5B0C0A !important;
+        font-size: smaller;
+    }
+
+    .house{
+        align-items: center;
+    }
+
+    .head-adress, .galashwe-adress, .Hartswater-adress{
+        font-size: small;
+        margin-bottom: 0px;
+    }
+
+    .fa-envelope.b, .fa-mobile-screen.b, .fa-fax.b{
+        font-size: small;
+        color: #5B0C0A;
+    }
+
+    .footer-contact-h-b {
+        color: #5B0C0A;
+        font-size: small;
+        margin-bottom: 0px;
+    }
+
+    .footer-contact-b{
+        flex-direction: column;
+    }
+
+    .tell-fax-b{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-left: 0px;
+        width: 40%;
+    }
+
+    .tell-fax-b p{
+        margin-bottom: 0px;
+        font-size: x-small;
+    }
+
+    .cell-b{
+        display: flex;
+        gap:10px;
+        align-items: center;
+        margin-left: 0px;
+        
+    }
+    .mail-b{
+        margin-left: 0%;
+    }
+
+    
+
+    .thusho-number-b, .simon-number-b{
+        margin-bottom: 0px;
+        margin-left: 20.5px;
+        font-size: small;
+    }
+
+    .cell-b p{
+        margin-bottom: 0px;
+        font-size: x-small;
+    }
+
+    .mail-b{
+        display: flex;
+        gap: 10px;
+    }
+    .house h6{
+        font-size: small;
+        margin-bottom: 0px;
+    }
+
+    
+    .all-branch{
+        padding-top: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    /*Contact Form*/
+    .inputs-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .message textarea{
+        width:300px;
+    }
+
+    .contact-us-heading-container{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    /*footer*/
+    .page-footer{
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .home-footer{
+        width:100%;
+    }
+
+    .footer-home{
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    .footer-contact{
+        width: 100%;
+    }
+
+    .simon-number span{
+        margin-left: 2px;
+    }
+
+    .tell-fax p{
+        margin-left: 14px;
+    }
+
+    .head-office-container{
+        margin-bottom: 10px;
+    }
+
+    .Galashewe{
+        margin-bottom: 10px;
+    }
+
+     /*copyrights*/
+     .Copyrights-container p{
+        font-size: x-small;
+    }
+
+}
+
