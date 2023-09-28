@@ -154,7 +154,7 @@ li.divisions{
 /* prodcust section*/
 
 .main-container{
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
 }
 
@@ -171,6 +171,7 @@ li.divisions{
     text-align: center;
     border-radius: 8px 8px 0px 0;
     position: relative;
+    height:125px;
 }
 
 .product-tittle{

@@ -133,31 +133,6 @@ li.divisions{
 }
 
 /*background-picture*/
-.back-picture{
-    
-    width: 100%;
-    height: 500px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/img-banner2.jpg);
-    margin-bottom: 0px;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-attachment: fixed;
-}
-
-
-.back-container{
-    height: 500px;
-}
-
-.back-picture-h{
-    /* font-size: 30px; */
-    color:white;
-    line-height: 1.2;
-}
 
 
 /* Our history section */
@@ -315,7 +290,7 @@ li.divisions{
 
 /*Vision*/
 .v-back-image{
-    background: linear-gradient(0deg,
+    background-image: linear-gradient(0deg,
     rgba(24, 23, 23, 0.75),
     rgba(26, 27, 27, 0.75)), url('/images/page-2_img-1.jpg');
     background-repeat: no-repeat;
@@ -545,7 +520,7 @@ li.divisions{
 .card{
     position: relative;
     margin-bottom:30px;
-    
+    width: 25rem;
 }
 
 .card-img-top{
@@ -582,13 +557,13 @@ li.divisions{
 
 /*qoute*/
 .qoute{
-    font-weight: 600;
-    font-family:'Dancing Script', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #EC7F07;
+    font-style: italic;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-style: italic;
 }
 
 /*footer section*/
@@ -713,24 +688,63 @@ li.divisions{
     color: #E3DBAF;
 }
 
-@media only screen and (max-width:767px) and (max-height: 920px) {
-    .back-picture{
-        background-repeat: no-repeat;
-        background-size: 100% 80vh;
-        background-position: center;
-        height: 50vh;
+@media  (max-width:768px)  {
+    /*Navigation*/
+    .nav-container{
+        flex-direction: column;
     }
 
-    .back-container{
-        height: 50vh;
+    .collapse{
+        display: block;
+        padding-left: 0px;
     }
+
+    li#home::before, .change::before{
+        width:14% !important;
+    }
+
+    
     /*Our-V*/
+
+    .line1{
+        width: 83px;
+    
+    }
+
+    .line2{
+        width: 83px;
+    }
+
+    .line3{
+        width: 83px;
+    }
+
+    .mission-container {
+        transition: ease-in-out 0.5s;
+        height: 200px;
+    }
+
+    .vision-container{
+         transition: ease-in-out 0.5s;
+         height: 200px;
+    }
+
+    .our-container{
+         transition: ease-in-out 0.5s;
+         height: 200px;
+    }
 
     .vision-h{
         text-align: center;
         margin-top: 5%;
         margin-bottom: -5%;
     }
+
+    .card{
+        width: 24rem;
+    
+    }
+
     .quote{
         font-style: italic;
         font-size: smaller;
@@ -771,14 +785,17 @@ li.divisions{
     .cards-container {
         justify-content: center;
         display: inline-block;
-        margin-left: -13px;
 
     }
 
     .cards-container1 {
         float:none;
-        margin-left: -13px;
         
+    }
+
+    .card-img-top {
+        height: 250px;
+        border-bottom: 0.5px #5B0C0A solid;
     }
 
     
@@ -815,24 +832,21 @@ li.divisions{
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 768px) {
 
-    .back-picture{
-        background-repeat: no-repeat;
-        background-size: 100% 80vh;
-        background-position: center;
-        height: 50vh;
 
-       
-    }
-
-    .back-container{
-        height: 50vh;
-    }
 
     /*History*/
     .history-p {
         font-size: smaller;
+    }
+
+    .divider-container{
+        height:25px
+    }
+
+    .line{
+        height: 0px;
     }
 
     /*Our V*/
@@ -843,14 +857,51 @@ li.divisions{
 
     .headings {
     width: 100%;
-    padding: 3%;
     display: flex;
     font-size: xx-small;
-    font-weight: 50px;
+    padding-bottom: 12%;
+    }
+
+    .heading{
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .line1{
+        width: 83px;
+        border-bottom: #EC7F07 3px solid;
+        
+    }
+
+    .line2{
+        width: 83px;
+        border-bottom: #EC7F07 3px solid;
+        
+    }
+
+    .line3{
+        width: 83px;
+        border-bottom: #EC7F07 3px solid;
+       
     }
 
     .mission-p, .vision-p {
         font-size: smaller;
+    }
+
+    .mission-container {
+        transition: ease-in-out 0.5s;
+        height: 200px;
+    }
+
+    .vision-container{
+         transition: ease-in-out 0.5s;
+         height: 200px;
+    }
+
+    .our-container{
+         transition: ease-in-out 0.5s;
+         height: 200px;
     }
 
     /*Who-are-we*/
@@ -859,20 +910,41 @@ li.divisions{
         margin-left: 40px;
     }
     
+    .who-h {
+        margin-top: 10px;
+        color: #5B0C0A;
+        font-size: revert;
+    }
 
+    .who-h-container p {
+        color: #000000;
+        text-align: center;
+        font-size: small;
+    }
 
     .cards-container {
-        justify-content: center;
+        justify-items: center;
         display: inline-block;
-        margin-left: -13px;
+        padding-left: 5%;
     }
 
     .cards-container1 {
         margin-top: 0;
-        justify-content: center;
         display: inline-block;
-        margin-left: -13px;
+        justify-items: center;
+        padding-left: 5%;
        
+    }
+
+    .card{
+        width: 24rem;
+   
+    
+    }
+
+    .card-img-top {
+        height: 250px;
+        border-bottom: 0.5px #5B0C0A solid;
     }
 
     .v-description-container{
@@ -882,5 +954,44 @@ li.divisions{
     .mission-p, .vision-p{
         font-size: smaller;
     }
+
+    /*qoute*/
+    .qoute{
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    /*footer*/
+    .page-footer{
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .home-footer{
+        width:100%;
+    }
+
+    .footer-home{
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    .footer-contact{
+        width: 100%;
+    }
+
+    .simon-number span{
+        margin-left: 2px;
+    }
+
+    .tell-fax p{
+        margin-left: 19px;
+    }
+
+    /*copyrights*/
+    .Copyrights-container p{
+        font-size: x-small;
+    }
+
 }
 
