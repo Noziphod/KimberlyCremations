@@ -5,19 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>Kimberly Cremations</title>
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/aboutus.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap + Satisfy" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
-    <meta name="format-detection" content="telephone=no">
-   
+    <link rel = "icon" href = "./images/logo.png" type = "image/x-icon">
     <script src="https://kit.fontawesome.com/6008c27e6e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+    <style>
+
+        .back-section{
+            height: 500px;
+            margin-top: 0px;
+        }
+        .back-picture{
+            width: 100%;
+            height: 500px;
+            background: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/img-banner2.jpg);
+            background-size: 100% 100%;
+            background-position: center center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        @media (max-width:768px){
+            .back-section{
+                height: 350px;
+            }
+        }
+
+
+    </style>
     <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
@@ -26,24 +50,24 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse  " id="navbarNav">
+            <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="nav-container">
-                    <li class="nav-item"><a href="./index.html " class="nav-link change">Home</a></li>
-                    <li id="home" class="nav-item"><a href="./about.html" class="nav-link change">About Us</a></li>
-                    <li class="nav-item dropdown " class="nav-link">
-                        <a class="nav-link dropdown-toggle" id="home" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li class="nav-item"><a href="./index.html" class="nav-link change">Home</a></li>
+                    <li id="home" class="nav-item"><a href="" class="nav-link">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             What We Offer
                         </a>
-                        <ul  class="dropdown-menu">
+                        <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="">Our Services </a></li>
                             <li><a class="dropdown-item" href="">Our Products</a></li>
                             
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="./gallery.html" class="nav-link">Gallery</a></li>
+                     <li class="nav-item"><a href="" class="nav-link">Gallery</a></li>
                     <li class="nav-item"><a href="./contact-us.html" class="nav-link">Contact Us</a></li>
                 </ul>
-                
+
                 <div class="nav-icons">
                     <ul class="icons-container">
                         <li class="nav-item"> <a href="" class="nav-icon"><i class="fa-brands fa-whatsapp"></i></a></li>
@@ -57,143 +81,118 @@
         </div>
         
     </nav>
-    <div class="overlay-container">
-        <div class="dark-background">
-            
-        </div>
-        <img src="./images/img-banner2.jpg" alt="image" class="top-img">
-        <h1 class="img-h">ABOUT US</h1>
-    </div>
 
-    <!--Background-->
-    <!-- <div class="back-container">
+    <section class="back-section">
         <div class="back-picture">
-
             <h1 class="back-picture-h">
                 ABOUT US
             </h1>
+        </div>
+    </section>
+
+    <section class="history-section">
+        <div class="container">
+            <h1 class="history-h">
+                Our History
+            </h1>
+            <p class="history-p">
+                Kimberley Cremation & Funerals was established in 2001. We have our own premises and crematorium, as well as private cemetary. We provide a complete flexible funeral or cremation service as per your needs.
+
+            </p>
+
+            <p class="history-p">
+                With our own crematorium there are no need for the transport of the deceased and no long waiting period for ashes. We cremate every Wednesday, but also on other days if needed. Ashes are available on the same day to inter. At Kimberley Cremation & Funerals you get peace of mind that you, while enjoying our support, will surely save on this necessary cost. Feel free to compare us.
+            </p>
+        </div>
+    </section>
+
     
-        </div>
 
-    </div> -->
-
-    <!--Our History section-->
-    <div class="history-container">
-        <div class="history-heading-container">
-            <h1 class="history-heading">Our History</h1>
-        </div>
-        <div class="history-content-container">
-            <div class="history-content">
-                <p class="history-p">
-                    Kimberley Cremation & Funerals was established in 2001. We have our own premises and crematorium, as well as private cemetary. We provide a complete flexible funeral or cremation service as per your needs.
-                </p>
-                <p class="history-p">
-                    With our own crematorium there are no need for the transport of the deceased and no long waiting period for ashes. We cremate every Wednesday, but also on other days if needed. Ashes are available on the same day to inter. 
-                    At Kimberley Cremation & Funerals you get peace of mind that you, while enjoying our support, will surely save on this necessary cost. Feel free to compare us.
-                   
-                </p>
-    
-            </div>
-
-        </div>
-        
-    </div>
-
-    <!--line-->
-    <div class="divider-container">
-        <div class="line">
-            
-        </div>
-
-    </div>
-
-    <!--our vision-->
     <section class="vision-section">
-    <div class="v-back-image">
-        <div class="vision-h-container">
-            <!--<h2 class="vision-h">
-                Always look on the bright side of life <p class="quote">~ Monty Python</p>
-            </h2>-->
+        <div class="v-back-image">
+            <div class="vision-h-container">
+               
+            </div>
+
+            <div class="headings">
+                <div class="Mission-heading" onclick="hideVO()">
+                    <h3 class="heading">OUR MISSION</h3>
+                    <div class="line1"></div>
+                    
+                </div>
+                <div class="Vision-heading" onclick="hideMO()">
+                    <h3 class="heading">OUR VISION</h3>
+                    <div class="line2"></div>
+                </div>
+
+                <div class="Our-heading" onclick="hideMV()">
+                    <h3 class="heading">OUR STATEMENT</h3>
+                    <div class="line3"></div>
+                </div>
+            </div>
         </div>
+            <div class="mission-container">
+                <div class="mission-inner">
+                <!--<div class="v-img-container">
+                    <img src="./images/About.1 (1).jpeg" alt="vision-image" class="v-img">
 
-        <div class="headings">
-            <div class="Mission-heading" onclick="hideVO()">
-                <h3 class="heading">OUR MISSION</h3>
-                <div class="line1"></div>
-                
+                </div>-->
+                    <div class="v-description-container">
+                        <div class="mission">
+                        <!-- <h3 class="mission-h3">
+                                Mission
+                            </h3>-->
+                            <p class="mission-p">
+                                Our mission is to provide the community with professional and quality service during difficult times. We strive to treat the deceased with the utmost care and dignity, while offering empathetic support to their families. Our availability round the clock ensures that we can cater to their needs and address any problems that may arise.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="Vision-heading" onclick="hideMO()">
-                <h3 class="heading">OUR VISION</h3>
-                <div class="line2"></div>
-            </div>
+            <div class="vision-container">
+                <div class="vision-inner">
+                <!--<div class="v-img-container">
+                    <img src="./images/about2.jpeg" alt="vision-image" class="v-img">
 
-            <div class="Our-heading" onclick="hideMV()">
-                <h3 class="heading">OUR STATEMENT</h3>
-                <div class="line3"></div>
-            </div>
-        </div>
-    </div>
-        <div class="mission-container">
-            <div class="mission-inner">
-            <!--<div class="v-img-container">
-                <img src="./images/About.1 (1).jpeg" alt="vision-image" class="v-img">
-
-            </div>-->
+                </div>-->
                 <div class="v-description-container">
-                    <div class="mission">
-                    <!-- <h3 class="mission-h3">
-                            Mission
+                    <div class="vision">
+                        <!--<h3 class="vision-h3">
+                            Vision
                         </h3>-->
-                        <p class="mission-p">
-                            Our mission is to provide the community with professional and quality service during difficult times. We strive to treat the deceased with the utmost care and dignity, while offering empathetic support to their families. Our availability round the clock ensures that we can cater to their needs and address any problems that may arise.
+                        <p class="vision-p">
+                            Our vision is to be the trusted and compassionate funeral service provider in the community. We aim to create a supportive environment for grieving families by offering professional assistance and handling all their requests with care and respect.
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="vision-container">
-            <div class="vision-inner">
-            <!--<div class="v-img-container">
-                <img src="./images/about2.jpeg" alt="vision-image" class="v-img">
+            </div>
 
-            </div>-->
-            <div class="v-description-container">
-                <div class="vision">
-                    <!--<h3 class="vision-h3">
-                        Vision
-                    </h3>-->
-                    <p class="vision-p">
-                        Our vision is to be the trusted and compassionate funeral service provider in the community. We aim to create a supportive environment for grieving families by offering professional assistance and handling all their requests with care and respect.
-                    </p>
+            <div class="our-container">
+                <div class="our-inner">
+                <!--<div class="v-img-container">
+                    <img src="./images/About.1 (3).jpeg" alt="vision-image" class="v-img">
+
+                </div>-->
+                <div class="v-description-container">
+                    <div class="vision">
+                        <!--<h3 class="vision-h3">
+                            Our Statement
+                        </h3>-->
+                        <p class="vision-p">
+                            At our funeral service, we are committed to remaining fully involved in the arrangements of church services, including selecting ministers, coordinating organists, and providing flowers. By directly managing these aspects, we eliminate middlemen and reduce costs, ensuring that families receive personalized and affordable services. Our dedication to professionalism and comprehensive support sets us apart in the industry.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-
-        <div class="our-container">
-            <div class="our-inner">
-            <!--<div class="v-img-container">
-                <img src="./images/About.1 (3).jpeg" alt="vision-image" class="v-img">
-
-            </div>-->
-            <div class="v-description-container">
-                <div class="vision">
-                    <!--<h3 class="vision-h3">
-                        Our Statement
-                    </h3>-->
-                    <p class="vision-p">
-                        At our funeral service, we are committed to remaining fully involved in the arrangements of church services, including selecting ministers, coordinating organists, and providing flowers. By directly managing these aspects, we eliminate middlemen and reduce costs, ensuring that families receive personalized and affordable services. Our dedication to professionalism and comprehensive support sets us apart in the industry.
-                    </p>
-                </div>
             </div>
-        </div>
-        </div>
-            
+                
 
-    </div>
+        </div>
 
     
     </section>
+
 
     <section class="who-section">
         <div class="who-h-container">
@@ -266,11 +265,13 @@
 
     <section>
         <div class="motto">
-            <h5 class="qoute">
+            <h6 class="qoute">
                 We treat the deceased as if you are dealing with your own 
-            </h5>
+            </h6>
         </div>
     </section>
+    
+
 
     <section>
         <footer class="page-footer">
@@ -389,6 +390,9 @@
 
                 </div>
                 <div class="simon">
+                    <!-- <p class="simon-text">
+                        SIMON:
+                    </p> -->
                     <p class="simon-number">
                         072 451 9719 <span style="font-weight: bold;">(SIMON)</span>
                     </p>
@@ -416,81 +420,8 @@
     </section>
     
 
-
-    <!-- Our vision
-    <div class="our-vision">
-        <div class="Back-Image-container">
-            <div class="Back-Image">
-                <h3 class="qoute">
-                Treat the deceased as if you are dealing with your own 
-                </h3>
-            </div>
-
-        </div>
-        <div class="menu-vision-nav  " id="our-vision-navbar">
-            <ul class="our-menu-vision-container">
-                    <li class="menu-list">
-                        <a href="#" class="active">
-                            <span class="item">Our Vision</span>
-                        </a>
-                    </li>
-                    <li class="menu-list">
-                        <a href="#" class="active" >
-                            <span class="item">Our Statment</span>
-                        </a>
-                    </li>
-                    <li class="menu-list" >
-                      <a href="#" class="active">
-                            <span class="item">Our Core</span>
-                    </a>
-                    </li>
-            </ul>
-
-           
-        </div>
-            <div class="our-vision-section">
-                <div class="content">
-                    <a href="#">
-                        
-                    </a>
-                    <div class=" our-vision-content">
-                        <div class="side-image-vision">
-
-                            <h3>
-                                Our Vision
-                            </h3>
-                            <p>
-
-                            </p>
-                        </div>
-                    
-                    </div>
-                    <div class=" our-statement-content">
-                        <div class="side-image-statement">
-
-                        </div>
-                    </div>
-                    <div class=" our-core-content">
-                        <div class="side-image-core">
-
-                        </div>
-                    </div>
-                </div>
-                        
-                
-            </div>
-    <script>
-        var content = document.querySelector(".content");
-    content.addEventListener("click", function(){
-        document.querySelector("card-body-V").classList.toggle("active");
-        document.querySelector("card-body-M").classList.toggle("active");
-        document.querySelector("card-body-O").classList.toggle("active");
-    })
-    </script>
-    
-    </script>-->
-    <script src="./javascript/about.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script> 
-    </body>
-    </html>
+    <script type="text/javascript" src="./javascript/about.js"></script>
+</body>
+</html>

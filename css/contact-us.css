@@ -249,8 +249,10 @@ li.divisions{
     color: #5B0C0A;
 }
 
-.house-adress, .galashwe-adress, .Hartswater-adress{
+.head-adress, .galashwe-adress, .Hartswater-adress{
     color: #000000;
+    margin-bottom: 0px;
+    
 }
 .house{
     display: flex;
@@ -271,31 +273,45 @@ li.divisions{
     padding-right: 7%;
 }
 
-.head-map{
+.head-map, .head-map1, .head-map2{
     width: 30%;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
     height: 350px;
+    display: none;
    
 }
 
+.active{
+    display: block;
+}
 
-.head-map iframe {
+
+.head-map iframe, .head-map1 iframe, .head-map2 iframe {
     height: 300px;
     border-radius: 10px;
     width: 400px;
     border: yellow solid 1px !important;
     
 }
-
+.map-btn{
+    font-size: small;
+    background-color: white;
+    border:none;
+    color: #5B0C0A;
+    font-weight: 600;
+    text-decoration: underline;
+    font-style: italic;
+}
 
 
 .footer-contact-b{
     display: flex;
     justify-content: space-evenly;
     width:100%;
+    margin-top: 10px;
 
 }
 
