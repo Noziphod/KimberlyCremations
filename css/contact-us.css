@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: sans-serif;
 }
 
 /*Navigation*/
@@ -251,7 +252,7 @@ li.divisions{
 
 .head-adress, .galashwe-adress, .Hartswater-adress{
     color: #000000;
-    margin-bottom: 0px;
+
     
 }
 .house{
@@ -639,8 +640,8 @@ textarea:focus{
     }
 
     .head-adress, .galashwe-adress, .Hartswater-adress{
-        font-size: small;
-        margin-bottom: 0px;
+        
+       
     }
 
     .fa-envelope.b, .fa-mobile-screen.b, .fa-fax.b{

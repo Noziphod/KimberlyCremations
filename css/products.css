@@ -155,7 +155,7 @@ li.divisions{
 
 .main-container{
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 .our-p-container{
@@ -243,6 +243,50 @@ li.divisions{
     touch-action: manipulation;
     transition: all 0.3s;
     text-decoration: none !important;
+}
+
+/*Personal*/
+
+.personal-section{
+    display: flex;
+
+}
+.personal-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 78%;
+}
+
+.personal-btn-container{
+    width: 20%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 100px;
+}
+
+.personal-h{
+    color: #5B0C0A;
+}
+
+.personal-btn{
+    width: 60%;
+    height: 40px;
+    background-color: #5B0C0A;
+    color: #EC7F07;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.personal-btn:hover{
+    color: #EC7F07;
 }
 
 
@@ -383,6 +427,26 @@ li.divisions{
 
     li#home::before, .change::before{
         width:14% !important;
+    }
+
+    .personal-h{
+        font-size: small;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .personal-section{
+        flex-direction: column;
+    }
+
+    .personal-container{
+        width: 100%;
+    }
+
+    .personal-btn-container{
+        width: 100%;
+        justify-content: center;
     }
 
      /*footer*/
